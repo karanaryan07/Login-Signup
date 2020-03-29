@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style >
+		.logodiv{
+                height: 590px;
+                width: 450px;
+                margin-top: 10px;
+                margin-left:90px; 
+                background-color: #eeeeee;
+               float : left;
+           }
+
+           /*.logoimg{
+                height : 440px;
+                width :  400px;
+                max-width: 85%;
+                max-height: 85%;
+                padding-top: 30px;
+                padding-left: 30px;
+               padding-bottom: 10px;
+           }*/
+
+           .logofont{
+               padding-left: 40px;
+               padding-right: 40px;
+               font-family : sans-serif;
+               color: #424242;
+               font-size: 14px;
+               text-align: center;
+               
+           }
+
+           .carousel-indicators li {
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    /*margin: 10px;*/
+
+    text-indent: 0;
+    cursor: pointer;
+    border: 5px;
+    border-radius: 10%;
+    background-color:  #ffff99;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+    list-style-type: square;
+}
+
+.carousel-indicators .active {
+    /*width: 48px;
+    height: 48px;
+    margin: 10px;*/
+    width: 30px;
+    height: 5px;
+    border: 5px;
+    border-radius: 10%;
+    background-color: #3374FF;
+}
+           
+	</style>
+</head>
+<body>
+	
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" style = "height: 590px;
+                width: 450px;
+                margin-top: 10px;
+                margin-left:90px; 
+                background-color: #eeeeee;
+               float : left;">
+
+               <div style = "left : 5%; right: 5%;"class="carousel-caption">
+        			<h4 style = "
+               font-family : sans-serif;
+               color: #424242;
+               font-size: 18px;
+               padding-left: 5px;
+               padding-right: 5px;
+               text-align: center;">Loren Ipsum is simply dummy text of the printing and typesetting industry</h4>
+      			</div>
+    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		    </ol>
+
+    <!-- Wrapper for slides -->
+    		<div class="carousel-inner">
+      			<div class="item active">
+			        <img class = "logoimg" src="login1.png" alt="Los Angeles" style="height : 440px;
+                width :  400px;
+                max-width: 90%;
+                max-height: 85%;
+                margin-top: 50px;
+                padding-left:50px;
+               padding-bottom: 10px;">
+
+      			</div>
+
+      			<div class="item">
+       				 <img class = "logoimg" src="login2.png" alt="Chicago" style="height : 440px;
+                width :  400px;
+                max-width: 90%;
+                max-height: 85%;
+                margin-top: 50px;
+                padding-left: 50px;
+               padding-bottom: 10px;">
+      			</div>
+    
+      			<div class="item">
+        			<img class = "logoimg" src="login3.png" alt="New York" style="height : 400px;
+                width :  400px;
+                max-width: 90%;
+                max-height: 65%;
+                margin-top: 50px;
+                padding-left: 50px;
+               padding-bottom: 10px;">
+      			</div>
+  		
+    		</div>
+
+    <!-- Left and right controls -->
+		    <a   data-slide="prev">
+		      <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
+		      <span class="sr-only">Previous</span>
+		    </a>
+
+		    <a  data-slide="next">
+		      <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
+		      <span class="sr-only">Next</span>
+		    </a>
+ 		</div>
+	
+</body>
+</html>

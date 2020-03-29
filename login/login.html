@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+       <style>
+           .container{
+               width : 100%;
+               padding: 0px;
+           }
+           /*.logodiv{
+                height: 590px;
+                width: 450px;
+                margin-top: 10px;
+                margin-left:90px; 
+                background-color: #eeeeee;
+               float : left;
+           }
+           
+           .logoimg{
+                height : 440px;
+                width :  400px;
+                max-width: 85%;
+                max-height: 85%;
+                padding-top: 30px;
+                padding-left: 30px;
+               padding-bottom: 10px;
+           }*/
+           
+           .logofont{
+               padding-left: 40px;
+               padding-right: 40px;
+               font-family : sans-serif;
+               color: #424242;
+               font-size: 14px;
+               text-align: center;
+               
+           }
+           
+           .rest{
+               width : 450px;
+               height: 450px;
+               float: right;
+               /*padding-right: 120px;*/
+/*               padding-top: :150px;*/
+				margin-right: 135px;
+               margin-top: 70px;
+
+           }
+           
+           .nimble{
+                height: 50px;
+                width : 170px; 
+                margin-left: 120px;
+               align-content: center;
+           }
+           
+           .nimblefont{
+               padding-left: 10px;
+               padding-right: 40px;
+               margin-bottom: 25px;
+               font-family : sans-serif;
+               color: #999999;
+               font-size: 14px;
+               text-align: center;
+           }
+              
+           
+           .carousel-indicators li {
+                        display: inline-block;
+                        width: 30px;
+                        height: 5px;
+                        /*margin: 10px;*/
+
+                        text-indent: 0;
+                        cursor: pointer;
+                        border: 5px;
+                        border-radius: 10%;
+                        background-color:  #ffff99;
+                        /*box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);*/    
+                        list-style-type: square;
+                    }
+
+                    .carousel-indicators .active {
+                        /*width: 48px;
+                        height: 48px;
+                        margin: 10px;*/
+                        width: 30px;
+                        height: 5px;
+                        border: 5px;
+                        border-radius: 10%;
+                        background-image: linear-gradient(to left, #74ebd5, #9face6);
+                    }
+           
+        </style> 
+    </head>
+    <body style = "padding: 0px">
+        <div style = "background-image: linear-gradient(to left, #74ebd5, #9face6)" class = "container">
+        	<!-- style = "background-image: linear-gradient(to left, #74ebd5, #9face6)" -->
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" style = "height: 625px;
+                        width: 520px;
+                        /*margin-top: 10px;
+                        margin-left:90px;*/ 
+                        background-color: #eeeeee;
+                       float : left;">
+
+                   <div style = "left : 5%; right: 5%;"class="carousel-caption">
+                        <h4 style = "
+                               font-family : sans-serif;
+                               color: #424242;
+                               font-size: 18px;
+                               padding-left: 5px;
+                               padding-right: 5px;
+                               text-align: center;">Loren Ipsum is simply dummy text of the printing and typesetting industry</h4>
+                  </div>
+    <!-- Indicators -->
+                    <ol style = "color: cornflowerblue" class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class = "logoimg" src="login1.png" alt="Los Angeles" style="height : 440px;
+                        width :  400px;
+                        max-width: 90%;
+                        max-height: 85%;
+                        margin-top: 50px;
+                        padding-left:95px;
+                       padding-bottom: 10px;">
+
+                        </div>
+
+                        <div class="item">
+                             <img class = "logoimg" src="login2.png" alt="Chicago" style="height : 440px;
+                        width :  400px;
+                        max-width: 90%;
+                        max-height: 85%;
+                        margin-top: 50px;
+                        padding-left: 95px;
+                       padding-bottom: 10px;">
+                        </div>
+
+                        <div class="item">
+                            <img class = "logoimg" src="login3.png" alt="New York" style="height : 350px;
+                        width :  400px;
+                        max-width: 90%;
+                        max-height: 65%;
+                        margin-top: 50px;
+                        padding-left: 105px;
+                       padding-bottom: 10px;">
+                        </div>
+    		</div>
+
+            <!-- Left and right controls -->
+                    <a data-slide="prev">
+                      <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
+                      <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a data-slide="next">
+                      <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
+                      <span class="sr-only">Next</span>
+                    </a>
+ 		</div>            
+            
+             <div class = "rest">
+                 <img class = "nimble" src = "nimble.png" >
+                 <h4 class = "nimblefont">Loren Ipsum is simply dummy text of the printing and type setting industry</h4>
+                 
+
+                 <form action="" id="signup-form" class="signup-form">
+
+                      <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Your Email"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="password" id="password" placeholder="Password"/>
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+                     	
+                     	<div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>Remember Me <!-- <a href="#" class="term-service">Terms of service</a> --></label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" name="LOGIN" id="submit" class="form-button" value="Login"/>
+                        </div>
+
+                        <p style = "font-size: 12px; text-align: center;">
+                        Not a member yet ? <a href="file:///C:\Users\Lenovo\Desktop\Solytics-master_\signup\index.html" class="loginhere-link">Signup ?</a>
+                    </p>
+                     <!-- <br><center><button type="submit" class = "buttoni">LOGIN</button></center><br><br> -->
+
+                 </form>
+                 <br><p style = "text-align: center ; color : #757575 ; font-size : 14px">Powered by AI</p>
+                 <b><p style="text-align: center; color : #424242 ; font-size : 20px ; font-style : oblique ">Solytics Partners</p></b>
+             </div>
+        </div>
+    </body>
+</html>
